@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './components/MainTest';
+import MainTest from "./components/MainTest";
+const HeaderStyle = {
+    backgroundColor: '#48aae0',
+    paddingLeft: 50,
+    paddingTop: 20,
+    paddingBottom: 20,
+    color: 'white'
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <div style={HeaderStyle}>
+            Indivcountry
+          </div>
+          <MainTest/>
+      </div>
   );
 }
 
 export default App;
+
